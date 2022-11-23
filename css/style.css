@@ -1,7 +1,71 @@
+.container {
+  max-width: 600px;
+  background: linear-gradient(
+    178.6deg,
+    rgb(232, 245, 253) 3.3%,
+    rgb(252, 253, 255) 109.6%
+  );
+
+  font-family: "Alexandria", sans-serif;
+  padding: 40px;
+  margin: 50px auto 30px;
+  border-radius: 8px;
+  box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.5);
+}
+
 h1 {
   text-align: center;
+  font-size: 36px;
+  margin-top: 0;
+}
+
+select {
+  display: block;
+  width: 100%;
+  font-size: 15px;
+  padding: 7px;
+  border-radius: 4px;
+}
+
+.city {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 3px double rgba(0, 0, 0, 0.3);
+  padding: 15px 0;
+  margin: 15px 0 0;
+}
+
+.city:last-child {
+  border: none;
+}
+
+h2 {
+  font-size: 25px;
+  margin: 0 0 5px;
+}
+
+.date {
+  font-size: 15px;
+  opacity: 0.8;
+}
+
+.time {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.time small {
+  font-size: 15px;
+  vertical-align: middle;
 }
 
 footer {
   text-align: center;
+  font-size: 14px;
+  font-family: "Alexandria", sans-serif;
+  margin: 0 0 50px;
+}
+
+footer a {
+  color: rgb(16, 164, 255);
 }
