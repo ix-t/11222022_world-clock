@@ -11,6 +11,8 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/style.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.39/moment-timezone-with-data-1970-2030.min.js"></script>
     <title>World Clock - Ixchel Tiro</title>
   </head>
   <body>
@@ -22,27 +24,21 @@
         <option value="">New York</option>
         <option value="">London</option>
       </select>
-      <div class="city">
+      <div class="city" id="mexico-city">
         <div>
           <h2>Mexico City</h2>
-          <div class="date">August 15th 2022</div>
+          <div class="date"></div>
         </div>
-        <div class="time">
-          05:40:05
-          <small> AM </small>
-        </div>
+        <div class="time"></div>
       </div>
-      <div class="city">
+      <div class="city" id="new-york">
         <div>
           <h2>New York</h2>
-          <div class="date">August 15th 2022</div>
+          <div class="date"></div>
         </div>
-        <div class="time">
-          05:40:05
-          <small> AM </small>
-        </div>
+        <div class="time"></div>
       </div>
-      <div class="city">
+      <div class="city" id="london">
         <div>
           <h2>London</h2>
           <div class="date">August 15th 2022</div>
@@ -52,7 +48,7 @@
           <small> AM </small>
         </div>
       </div>
-      <div class="city">
+      <div class="city" id="paris">
         <div>
           <h2>Paris</h2>
           <div class="date">August 15th 2022</div>
@@ -62,7 +58,7 @@
           <small> AM </small>
         </div>
       </div>
-      <div class="city">
+      <div class="city" id="tokyo">
         <div>
           <h2>Tokyo</h2>
           <div class="date">August 15th 2022</div>
