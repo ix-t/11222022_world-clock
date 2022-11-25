@@ -100,3 +100,49 @@ footer {
 footer a {
   color: rgb(165, 97, 155);
 }
+
+/*Media Queries*/
+@media (max-width: 600px) {
+  .container {
+    max-width: 250px;
+    padding: 30px;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+
+  h3 {
+    font-size: 17px;
+  }
+
+  select {
+    font-size: 12px;
+  }
+
+  h2 {
+    font-size: 18px;
+  }
+
+  .date {
+    font-size: 11px;
+  }
+
+  .time {
+    width: 100px;
+    font-size: 24px;
+  }
+
+  .time-dd {
+    width: 70px;
+    font-size: 24px;
+  }
+
+  .return-link {
+    font-size: 11px;
+  }
+
+  footer {
+    font-size: 11px;
+  }
+}

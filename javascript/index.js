@@ -1,3 +1,4 @@
+//World date/time for principal countries functionality
 function updateTime() {
   //Toronto
   let torontoElement = document.querySelector("#toronto");
@@ -51,9 +52,9 @@ function updateTime() {
 updateTime();
 setInterval(updateTime, 1000);
 
+//Dropdown list functionality
 function updateCity(event) {
   let cityTimezone = event.target.value;
-  console.log(event.target.value);
 
   if (cityTimezone === "current") {
     cityTimezone = moment.tz.guess();
