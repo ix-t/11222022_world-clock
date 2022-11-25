@@ -8,9 +8,7 @@ function updateTime() {
     let torontoTime = moment().tz("America/Toronto");
 
     torontoDateElement.innerHTML = torontoTime.format("MMMM Do YYYY");
-    torontoTimeElement.innerHTML = torontoTime.format(
-      "hh:mm:ss [<small>]A[</small>]"
-    );
+    torontoTimeElement.innerHTML = torontoTime.format("HH:mm:ss");
   }
 
   //Lisbon
@@ -22,9 +20,7 @@ function updateTime() {
     let lisbonTime = moment().tz("Europe/Lisbon");
 
     lisbonDateElement.innerHTML = lisbonTime.format("MMMM Do YYYY");
-    lisbonTimeElement.innerHTML = lisbonTime.format(
-      "hh:mm:ss [<small>]A[</small>]"
-    );
+    lisbonTimeElement.innerHTML = lisbonTime.format("HH:mm:ss");
   }
 
   //Berlin
@@ -36,9 +32,7 @@ function updateTime() {
     let berlinTime = moment().tz("Europe/Paris");
 
     berlinDateElement.innerHTML = berlinTime.format("MMMM Do YYYY");
-    berlinTimeElement.innerHTML = berlinTime.format(
-      "hh:mm:ss [<small>]A[</small>]"
-    );
+    berlinTimeElement.innerHTML = berlinTime.format("HH:mm:ss");
   }
 
   //Tokyo
@@ -50,9 +44,7 @@ function updateTime() {
     let tokyoTime = moment().tz("Asia/Tokyo");
 
     tokyoDateElement.innerHTML = tokyoTime.format("MMMM Do YYYY");
-    tokyoTimeElement.innerHTML = tokyoTime.format(
-      "hh:mm:ss [<small>]A[</small>]"
-    );
+    tokyoTimeElement.innerHTML = tokyoTime.format("HH:mm:ss");
   }
 }
 
@@ -61,6 +53,7 @@ setInterval(updateTime, 1000);
 
 function updateCity(event) {
   let cityTimezone = event.target.value;
+  console.log(event.target.value);
 
   if (cityTimezone === "current") {
     cityTimezone = moment.tz.guess();
@@ -76,7 +69,7 @@ function updateCity(event) {
         <h2>${cityName}</h2>
         <div class="date">${cityTime.format("MMMM Do YYYY")}</div>
     </div>
-    <div class="time">${cityTime.format("HH:mm")}</div>
+    <div class="time-dd">${cityTime.format("HH:mm")}</div>
   </div>
   <a href="/" class="return-link">Return to all cities</a>
   `;

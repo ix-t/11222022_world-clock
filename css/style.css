@@ -10,7 +10,7 @@
     rgb(240, 251, 244) 100.7%
   );
   font-family: "Alexandria", sans-serif;
-  padding: 30px 35px;
+  padding: 40px;
   margin: 30px auto 20px;
   border-radius: 8px;
   box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.5);
@@ -19,12 +19,19 @@
 h1 {
   text-align: center;
   font-size: 33px;
-  margin-top: 0;
+  margin: 0 auto;
 }
 
 h1 a {
   color: rgb(36, 78, 112);
   text-decoration: none;
+}
+
+h3 {
+  text-align: center;
+  font-size: 19px;
+  margin: 0 0 22px;
+  opacity: 0.7;
 }
 
 select {
@@ -33,7 +40,8 @@ select {
   color: rgb(165, 97, 155);
   font-size: 14px;
   font-family: "Alexandria", sans-serif;
-  padding: 7px;
+  padding: 6px;
+  margin-bottom: 10px;
   border-color: rgb(165, 97, 155);
   border-radius: 4px;
 }
@@ -43,7 +51,7 @@ select {
   justify-content: space-between;
   border-bottom: 1px dotted rgba(0, 0, 0, 0.3);
   padding: 15px 0;
-  margin: 10px 0 0;
+  margin: 0 0;
 }
 
 .city:last-child {
@@ -56,18 +64,23 @@ h2 {
 }
 
 .date {
-  font-size: 14px;
+  font-size: 15px;
+  font-weight: bold;
+  opacity: 0.7;
 }
 
 .time {
   display: block;
-  font-size: 32px;
+  width: 160px;
+  font-size: 36px;
   font-weight: bold;
 }
 
-.time small {
-  font-size: 15px;
-  vertical-align: middle;
+.time-dd {
+  display: block;
+  width: 110px;
+  font-size: 36px;
+  font-weight: bold;
 }
 
 .return-link {
